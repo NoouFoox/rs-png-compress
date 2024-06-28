@@ -1,0 +1,9 @@
+[package]
+name = "compress-all-png"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+walkdir = "2.5.0"
+image = "0.25.1"
+oxipng = { version = "9.1.1", features = ["parallel", "zopfli", "filetime"], default-features = false }
